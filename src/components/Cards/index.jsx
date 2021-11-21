@@ -14,22 +14,24 @@ function Cards() {
     backgroundColor: theme.palette.background.default,
   }));
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={4}>
-        <Grid item xs={4}>
-          <Paper>xs=4</Paper>
+    <Container>
+      <Grid container spacing={3}>
+        <Grid item xs={8}>
+          <Item>xs=8</Item>
         </Grid>
         <Grid item xs={4}>
-          <Paper>xs=4</Paper>
+          <Item>
+            <span>xs=4</span>
+          </Item>
         </Grid>
         <Grid item xs={4}>
-          <Paper>xs=4</Paper>
+          <Item>xs=4</Item>
         </Grid>
-        <Grid item xs={4}>
-          <Paper>xs=4</Paper>
+        <Grid item xs={8}>
+          <span>xs=8</span>
         </Grid>
       </Grid>
-    </Box>
+    </Container>
   );
 }
 
