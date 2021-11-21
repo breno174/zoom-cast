@@ -26,7 +26,7 @@ function Cards() {
     <Container>
       <Grid container spacing={3}>
         <Grid item xs={8}>
-          <Item>xs=8</Item>
+          <Item language="Python">xs=8</Item>
         </Grid>
         <Grid item xs={4}>
           <Item>
@@ -37,7 +37,7 @@ function Cards() {
           <Item>xs=4</Item>
         </Grid>
         <Grid item xs={8}>
-          <span>xs=8</span>
+          <Item language="JS">xs=8</Item>
         </Grid>
       </Grid>
     </Container>
