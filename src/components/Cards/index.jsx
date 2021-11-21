@@ -4,7 +4,11 @@ function Cards() {
   const Container = styled("div")(() => ({
     flexGrow: 1,
     span: {
-      color: "#195",
+      color: "#000",
+      "&:hover": {
+        color: "#555",
+        textDecoration: "line-through",
+      },
     },
   }));
 
