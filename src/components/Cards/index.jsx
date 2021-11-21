@@ -12,10 +12,15 @@ function Cards() {
     },
   }));
 
-  const Item = styled(Paper)(({ theme }) => ({
+  const Item = styled(Paper)(({ theme, language }) => ({
     padding: theme.spacing(3),
     textAlign: "center",
-    backgroundColor: theme.palette.background.default,
+    backgroundColor:
+      language === "JS"
+        ? "#EE1"
+        : language === "Python"
+        ? "#195"
+        : theme.palette.background.default,
   }));
   return (
     <Container>
